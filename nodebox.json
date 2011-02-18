@@ -6,5 +6,6 @@
   "modules": [ "express",
                "nodeunit",
                "mongoose" ],
-  "node_version": "0.4.0"
+  "node_version": "0.4.0",
+  "npm_version": "0.2.18"
 }

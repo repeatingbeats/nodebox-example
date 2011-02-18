@@ -10,7 +10,7 @@ Install vagrant:
     $ gem install vagrant
 
 Download an 32-bit Ubuntu Lucid base box:
-    $ vagrant box add ubunutu-lucid-32 http://files.vagrantup.com/lucid32.box
+    $ vagrant box add ubuntu-lucid-32 http://files.vagrantup.com/lucid32.box
 
 TODO: Instructions for using other distributions
 

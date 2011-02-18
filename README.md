@@ -16,7 +16,13 @@ TODO: Instructions for using other distributions
 
 ## Getting Started with Nodebox
 
-TODO
+    $ git clone git@github.com:repeatingbeats/nodebox-example.git
+    $ cd nodebox-example/nodebox
+    $ vagrant up
+    
+    ... make your coffee ...
+
+    $ curl http://localhost:8000
 
 ## Development Nodebox
 

@@ -34,7 +34,7 @@ Then, edit the environment and app_port in nodebox.json
     {
       ...
       "environment": "production",
-      "app_port": 80
+      "app_port": 80,
       ...
     }
 
@@ -55,7 +55,7 @@ Sudo is required so Node can listen on port 80. Do this in the saftey of your ow
 On the host machine:
     $ curl http://localhost:8000
 
-Now, change something in app.js. Supervisor reloads the code, so you can view your changes right asway with another curl on the host.
+Now, change something in app.js. Supervisor reloads the code, so you can view your changes right away with another curl on the host.
 
 ## Acknowledgements
 

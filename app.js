@@ -5,7 +5,7 @@ var fs = require('fs'),
 
 var config = JSON.parse(fs.readFileSync(__dirname + '/nodebox.json'));
 var env = config.environment;
-var port = config.app_port || env == "production" ? 8080: 80;
+var port = config.app_port || (env == "production" ? 8080: 80);
 
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});

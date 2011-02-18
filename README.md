@@ -14,23 +14,49 @@ Download an 32-bit Ubuntu Lucid base box:
 
 TODO: Instructions for using other distributions
 
-## Getting Started with Nodebox
+## Production-ish Nodebox
 
     $ git clone git@github.com:repeatingbeats/nodebox-example.git
     $ cd nodebox-example/nodebox
     $ vagrant up
-    
+
     ... make your coffee ...
 
     $ curl http://localhost:8000
 
 ## Development Nodebox
 
-TODO
+    $ git clone git@github.com:repeatingbeats/nodebox-example.git
+    $ cd nodebox-example
 
-## Production-ish Nodebox
+Then, edit the environment and app_port in nodebox.json
 
-TODO
+    {
+      ...
+      "environment": "production",
+      "app_port": 80
+      ...
+    }
+
+After configuring the VM, SSH into the VM and start the app with the supervisor module. This allows you to see errors and console output in your shell. Supervisor reloads code on changes.
+    $ cd nodebox
+    $ vagrant up
+
+    ... make your coffee ...
+
+    $ vagrant ssh
+
+On the VM:
+    $ cd /var/www/nodebox-example
+    $ sudo supervisor -p app.js -w app.js
+
+Sudo is required so Node can listen on port 80. Do this in the saftey of your own VM! There's a reason this is called the development Nodebox. (For extra caveats, note that even the production-ish box is caveated with an 'ish')
+
+On the host machine:
+    $ curl http://localhost:8000
+
+Now, change something in app.js. Supervisor reloads the code, so you can view your changes right asway with another curl on the host.
 
 ## Acknowledgements
 
+TODO

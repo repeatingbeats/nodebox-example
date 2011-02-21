@@ -4,7 +4,7 @@ nodebox-example is "Hello World" for Node.js, but it's sandboxed in a VirtualBox
 
 ## Dependencies
 
-NodeBox uses <a href="http://www.vagrantup.com">Vagrant</a> to create <a href="http://www.virtualbox.org">VirtualBox</a> virtual machines that are then provisioned with <a href="http://www.opscode.com/chef/">Chef</a> (solo). Your host machine needs to be set up for Ruby and RubyGems, and you need to <a href="http://www.virtualbox.org/wiki/Downloads">download VirtualBox 4.0.x</a>. The <a href="http://vagrantup.com/docs/getting-started/index.html">Vagrant getting started guide</a> has more information on Vagrant's dependencies.
+NodeBox uses [Vagrant](http://www.vagrantup.com") to create [VirtualBox](http://www.virtualbox.org) virtual machines that are then provisioned with [Chef](http://www.opscode.com/chef) (solo). Your host machine needs to be set up for Ruby and RubyGems, and you need to [download VirtualBox 4.0.x](http://www.virtualbox.org/wiki/Downloads). The [Vagrant getting started guide](http://vagrantup.com/docs/getting-started/index.html) has more information on Vagrant's dependencies.
 
 Install vagrant:
     $ gem install vagrant
@@ -12,7 +12,7 @@ Install vagrant:
 Download an 32-bit Ubuntu Lucid base box:
     $ vagrant box add ubuntu-lucid-32 http://files.vagrantup.com/lucid32.box
 
-TODO: Instructions for using other distributions
+If you have a different Vagrant base box you want to use (i.e. _not_ ubuntu-lucid-32), you'll need to edit vgr_config.vm.box in the Vagrantfile accordingly.
 
 ## Production-ish NodeBox
 
@@ -59,4 +59,5 @@ Now, change something in app.js. Supervisor reloads the code, so you can view yo
 
 ## Acknowledgements
 
-TODO
+NodeBox uses Chef cookbooks by [opscode](https://github.com/opscode/cookbooks) and [mdxp](https://github.com/mdxp/cookbooks).
+

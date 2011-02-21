@@ -4,7 +4,7 @@ nodebox-example is "Hello World" for Node.js, but it's sandboxed in a VirtualBox
 
 ## Dependencies
 
-Nodebox uses <a href="http://www.vagrantup.com">Vagrant</a> to create <a href="http://www.virtualbox.org">VirtualBox</a> virtual machines that are then provisioned with <a href="http://www.opscode.com/chef/">Chef</a> (solo). Your host machine needs to be set up for Ruby and RubyGems, and you need to <a href="http://www.virtualbox.org/wiki/Downloads">download VirtualBox 4.0.x</a>. The <a href="http://vagrantup.com/docs/getting-started/index.html">Vagrant getting started guide</a> has more information on Vagrant's dependencies.
+NodeBox uses <a href="http://www.vagrantup.com">Vagrant</a> to create <a href="http://www.virtualbox.org">VirtualBox</a> virtual machines that are then provisioned with <a href="http://www.opscode.com/chef/">Chef</a> (solo). Your host machine needs to be set up for Ruby and RubyGems, and you need to <a href="http://www.virtualbox.org/wiki/Downloads">download VirtualBox 4.0.x</a>. The <a href="http://vagrantup.com/docs/getting-started/index.html">Vagrant getting started guide</a> has more information on Vagrant's dependencies.
 
 Install vagrant:
     $ gem install vagrant
@@ -14,7 +14,7 @@ Download an 32-bit Ubuntu Lucid base box:
 
 TODO: Instructions for using other distributions
 
-## Production-ish Nodebox
+## Production-ish NodeBox
 
     $ git clone git://github.com/repeatingbeats/nodebox-example.git --recursive
     $ cd nodebox-example/nodebox
@@ -24,7 +24,7 @@ TODO: Instructions for using other distributions
 
     $ curl http://localhost:8000
 
-## Development Nodebox
+## Development NodeBox
 
     $ git clone git://github.com/repeatingbeats/nodebox-example.git --recursive
     $ cd nodebox-example
@@ -50,7 +50,7 @@ On the VM:
     $ cd /var/www/nodebox-example
     $ sudo supervisor -p app.js -w app.js
 
-Sudo is required so Node can listen on port 80. Do this in the saftey of your own VM! There's a reason this is called the development Nodebox. (For extra caveats, note that even the production-ish box is caveated with an 'ish')
+Sudo is required so Node can listen on port 80. Do this in the saftey of your own VM! There's a reason this is called the development NodeBox. (For extra caveats, note that even the production-ish box is caveated with an 'ish')
 
 On the host machine:
     $ curl http://localhost:8000

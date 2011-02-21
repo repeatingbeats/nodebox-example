@@ -16,7 +16,7 @@ TODO: Instructions for using other distributions
 
 ## Production-ish Nodebox
 
-    $ git clone git@github.com:repeatingbeats/nodebox-example.git --recursive
+    $ git clone git://github.com/repeatingbeats/nodebox-example.git --recursive
     $ cd nodebox-example/nodebox
     $ vagrant up
 
@@ -26,7 +26,7 @@ TODO: Instructions for using other distributions
 
 ## Development Nodebox
 
-    $ git clone git@github.com:repeatingbeats/nodebox-example.git --recursive
+    $ git clone git://github.com/repeatingbeats/nodebox-example.git --recursive
     $ cd nodebox-example
 
 Then, edit the environment and app_port in nodebox.json

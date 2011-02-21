@@ -59,5 +59,5 @@ Now, change something in app.js. Supervisor reloads the code, so you can view yo
 
 ## Acknowledgements
 
-NodeBox uses Chef cookbooks by [opscode](https://github.com/opscode/cookbooks) and [mdxp](https://github.com/mdxp/cookbooks).
+NodeBox uses Chef cookbooks by [opscode](https://github.com/opscode/cookbooks) and [mdxp](https://github.com/mdxp/cookbooks). Using Monit and Upstart was [not my idea](http://howtonode.org/deploying-node-upstart-monit).
 

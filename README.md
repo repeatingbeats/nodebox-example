@@ -33,7 +33,7 @@ Then, edit the environment and app_port in nodebox.json
 
     {
       ...
-      "environment": "production",
+      "environment": "development",
       "app_port": 80,
       ...
     }
